@@ -22,7 +22,7 @@ public class TicTacToe {
 		if(userinput.equals("x")) {
 			user="x";
 			computer="o";
-			System.out.println(user+"computer="+computer);
+			System.out.println("user"+user+"computer="+computer);
 		}else if(userinput.equals("o")) {
 			computer="x";
 			user="o";
@@ -31,8 +31,7 @@ public class TicTacToe {
 		else {
 			System.out.println("Wrong input");
 		}
-			
-			
+				
 			
 	}
 	
