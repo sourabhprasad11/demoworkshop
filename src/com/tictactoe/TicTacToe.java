@@ -6,7 +6,7 @@ public class TicTacToe {
 	static String user;
 	static String computer;
 	
-	public void usecase1() {
+	public void getboard() {
 		board=new char[10];
 		for(int i=1;i<10;i++) {
 			 board[i]='\0';
@@ -14,7 +14,7 @@ public class TicTacToe {
 		System.out.println(board);
 	}
 	
-	public void usecase2() {
+	public void getinput() {
 		System.out.println("Enter the input for the game => x,o");
 		Scanner input=new Scanner(System.in);
 		String userinput=input.next();
@@ -22,11 +22,11 @@ public class TicTacToe {
 		if(userinput.equals("x")) {
 			user="x";
 			computer="o";
-			System.out.println("user"+user+"computer="+computer);
+			System.out.println("user="+user+", computer="+computer);
 		}else if(userinput.equals("o")) {
 			computer="x";
 			user="o";
-			System.out.println("user="+user+"computer="+computer);
+			System.out.println("user="+user+", computer="+computer);
 		}
 		else {
 			System.out.println("Wrong input");
@@ -38,8 +38,8 @@ public class TicTacToe {
 	public static void main(String[] args) {
 		TicTacToe gameobj= new TicTacToe();
 		System.out.println("Tic Tac Toe Game");
-		gameobj.usecase1();
-		gameobj.usecase2();
+		gameobj.getboard();
+		gameobj.getinput();
 		
 
 	}
