@@ -30,17 +30,26 @@ public class TicTacToe {
 		}
 		else {
 			System.out.println("Wrong input");
+			getinput();
 		}
-				
-			
+					
 	}
 	
+	public void showboard() {
+		System.out.println("	|	|	");
+		System.out.println("-----------------------");
+		System.out.println("	|	|	");
+		System.out.println("-----------------------");
+		System.out.println("	|	|	");
+	}
+	
+	
 	public static void main(String[] args) {
-		TicTacToe gameobj= new TicTacToe();
+		TicTacToe game= new TicTacToe();
 		System.out.println("Tic Tac Toe Game");
-		gameobj.getboard();
-		gameobj.getinput();
-		
+		game.getboard();
+		game.getinput();
+		game.showboard();
 
 	}
 
