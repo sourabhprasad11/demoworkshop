@@ -36,11 +36,11 @@ public class TicTacToe {
 	}
 	
 	public void showboard() {
-		System.out.println("	|	|	");
+		System.out.println(board[9]+"  |  "+board[8]+"  |  "+board[7]);
 		System.out.println("-----------------------");
-		System.out.println("	|	|	");
+		System.out.println(board[6]+"  |  "+board[5]+"  |  "+board[4]);
 		System.out.println("-----------------------");
-		System.out.println("	|	|	");
+		System.out.println(board[1]+"  |  "+board[2]+"  |  "+board[3]);
 	}
 	
 	
