@@ -1,9 +1,9 @@
 package com.tictactoe;
 
 public class TicTacToe {
-
+	static char[] board;
 	public void usecase1() {
-		char[] board=new char[10];
+		board=new char[10];
 		for(int i=1;i<10;i++) {
 			 board[i]='\0';
 		}
